@@ -1,0 +1,15 @@
+<templateSet group="8591Code">
+  <template name="cbc" value="import 'package:tw8591app/modular/interact/src/mvc/base_controller.dart';&#10;&#10;class $NAME$Controller extends BaseController&lt;$NAME$Model&gt; {&#10;&#10;  @override&#10;  void initRouteArguments() {&#10;     super.initRouteArguments();&#10;     $END$&#10;  }&#10;  &#10;  @override&#10;  void widgetDidLoad() {&#10;    super.widgetDidLoad();&#10;  }&#10;}" description="创建 page Controller" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="cstful" value="import 'package:flutter/material.dart';&#10;import 'package:tw8591app/modular/interact/src/mvc/base_state_page.dart';&#10;&#10;class $NAME$ extends StatefulWidget {&#10;  const $NAME$({super.key});&#10;&#10;  @override&#10;  State&lt;StatefulWidget&gt; createState() =&gt; $NAME$State();&#10;}&#10;&#10;class $NAME$State extends BasePageState&lt;$NAME$,$CONTROLLER$Controller&gt; {&#10;&#10;  @override&#10;  $CONTROLLER$Controller controller = $CONTROLLER$Controller();&#10;  &#10;  @override&#10;  Widget get content { &#10;    $END$&#10;  }&#10;}" description="创建 StatefulWidget , State 继承自 BasePageState&lt;&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTROLLER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+</templateSet>

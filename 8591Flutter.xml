@@ -1,0 +1,63 @@
+<templateSet group="8591Flutter">
+  <template name="mt" value="$returnType$ $methodName$($param$) $async$ {&#10;  $END$&#10;}" description="使用 mt 简化方法创建。" toReformat="false" toShortenFQNames="true">
+    <variable name="returnType" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="param" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="async" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="col" value="Column(&#10;   children: [&#10;       $END$&#10;   ],&#10;)$SYMBOL$" description="创建 Column" toReformat="false" toShortenFQNames="true">
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="row" value="Row(&#10;   children: [&#10;      $END$&#10;   ],&#10;)$SYMBOL$" description="创建 Row" toReformat="false" toShortenFQNames="true">
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="padonly" value="Padding(&#10;   padding: EdgeInsets.only($ONLY$),&#10;   child: $END$,&#10;)$SYMBOL$" description="创建 Padding (EdgeInsets.only())" toReformat="false" toShortenFQNames="true">
+    <variable name="ONLY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="padsh" value="Padding(&#10;   padding: EdgeInsets.symmetric(horizontal:$SYMMH$),&#10;   child: $END$,&#10;)$SYMBOL$" description="创建 Padding (EdgeInsets.symmetric(horizontal: ))" toReformat="false" toShortenFQNames="true">
+    <variable name="SYMMH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="padsv" value="Padding(&#10;   padding: EdgeInsets.symmetric(vertical:$SYMMV$),&#10;   child: $END$,&#10;)$SYMBOL$" description="创建 Padding (EdgeInsets.symmetric(vertical: ))" toReformat="false" toShortenFQNames="true">
+    <variable name="SYMMV" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="con" value="Container(&#10;   child: $END$,&#10;)$SYMBOL$" description="创建 Container" toReformat="false" toShortenFQNames="true">
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="stack" value="Stack(&#10;   children: [&#10;     $END$&#10;   ],&#10;)$SYMBOL$" description="创建 Stack" toReformat="false" toShortenFQNames="true">
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="stack2" value="Stack2(&#10;   children: [&#10;     $END$&#10;   ],&#10;)$SYMBOL$" description="创建 Stack" toReformat="false" toShortenFQNames="true">
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  
+</templateSet>
