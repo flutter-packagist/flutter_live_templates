@@ -1,5 +1,5 @@
 <templateSet group="8591Flutter">
-  <template name="mt" value="$returnType$ $methodName$($param$) $async$ {&#10;  $END$&#10;}" description="使用 mt 简化方法创建。" toReformat="false" toShortenFQNames="true">
+  <template name="mt" value="$returnType$ $methodName$($param$) $async$ {&#10;  $END$&#10;}" description="创建方法" toReformat="false" toShortenFQNames="true">
     <variable name="returnType" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="param" expression="" defaultValue="" alwaysStopAt="true" />
@@ -53,11 +53,91 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="stack2" value="Stack2(&#10;   children: [&#10;     $END$&#10;   ],&#10;)$SYMBOL$" description="创建 Stack" toReformat="false" toShortenFQNames="true">
+  <template name="off" value="Offstage(&#10;    offstage: $SYMMH$,&#10;    child: $END$,&#10;)$SYMBOL$" description="创建 Offstage" toReformat="false" toShortenFQNames="true">
+    <variable name="SYMMH" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
-  
+  <template name="sizeh" value="SizedBox(height: $END$)$SYMBOL$" description="创建 SizeBox" toReformat="false" toShortenFQNames="true">
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="sizew" value="SizeBox(width: $END$)$SYMBOL$" description="创建 SizeBox" toReformat="false" toShortenFQNames="true">
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="size" value="SizeBox(&#10;  height: $HEIGHT$,&#10;  width: $WIDTH$,&#10;  child: $END$,&#10;)$SYMBOL$" description="创建 SizeBox" toReformat="false" toShortenFQNames="true">
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="delays" value="await Future.delayed(Duration(seconds: $TIME$));" description="创建 Future.delay" toReformat="false" toShortenFQNames="true">
+    <variable name="TIME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="delaym" value="await Future.delayed(Duration(millisecond: $TIME$));" description="创建 Future.delay" toReformat="false" toShortenFQNames="true">
+    <variable name="TIME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="exp" value="Expanded(&#10;   child: $END$,&#10;)$SYMBOL$" description="创建 Expanded" toReformat="false" toShortenFQNames="true">
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="pc" value="import 'package:tw8591app/modular/interact/src/mvc/base_controller.dart';&#10;&#10;class $NAME$Controller extends BaseController&lt;$NAME$Model&gt; {&#10;&#10;  @override&#10;  void initRouteArguments() {&#10;     super.initRouteArguments();&#10;     $END$&#10;  }&#10;  &#10;  @override&#10;  void widgetDidLoad() {&#10;    super.widgetDidLoad();&#10;  }&#10;}" description="创建 page Controller" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="cstful" value="import 'package:flutter/material.dart';&#10;import 'package:tw8591app/modular/interact/src/mvc/base_state_page.dart';&#10;&#10;class $NAME$ extends StatefulWidget {&#10;  const $NAME$({super.key});&#10;&#10;  @override&#10;  State&lt;StatefulWidget&gt; createState() =&gt; $NAME$State();&#10;}&#10;&#10;class $NAME$State extends BasePageState&lt;$NAME$,$CONTROLLER$Controller&gt; {&#10;&#10;  @override&#10;  $CONTROLLER$Controller controller = $CONTROLLER$Controller();&#10;  &#10;  @override&#10;  Widget get content { &#10;    $END$&#10;  }&#10;}" description="创建 StatefulWidget , State 继承自 BasePageState&lt;&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTROLLER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="text" value="Text(&#10;  $value$,&#10;  style: TextStyle(&#10;    fontSize: $fontSize$.sp,&#10;    color: $color$,&#10;  ),&#10;)$SYMBOL$" description="创建 Text" toReformat="false" toShortenFQNames="true">
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="fontSize" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="posi" value="Positioned(&#10;  top: 0,&#10;  left: 0,&#10;  right: 0,&#10;  bottom: 0,&#10;  child: $END$,&#10;)$SYMBOL$" description="创建 Positioned" toReformat="false" toShortenFQNames="true">
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="gest" value="GestureDetector(&#10;  onTap: (){&#10;    $TAP$&#10;  },&#10;  child: $END$,&#10;)$SYMBOL$" description="创建 GestureDetector" toReformat="false" toShortenFQNames="true">
+    <variable name="TAP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ink" value="InkWell(&#10;  onTap: (){&#10;    $TAP$&#10;  },&#10;  child: $END$,&#10;)$SYMBOL$" description="创建 InkWell" toReformat="false" toShortenFQNames="true">
+    <variable name="TAP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>

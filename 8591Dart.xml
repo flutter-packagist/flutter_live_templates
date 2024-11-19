@@ -1,0 +1,36 @@
+<templateSet group="8591Dart">
+  <template name="todo" value="// TODO: $todo$ " description="添加 // TODO" toReformat="true" toShortenFQNames="true">
+    <variable name="todo" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="tc" value="try {&#10;  $END$&#10;} catch (e) {&#10;&#10;}" description="try..catch 处理异常" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="cc" value="const $class$($END$);" description="const constructor" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="st" value="setState(() {});" description="setState" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="singlehungry" value="class $className$ {&#10;&#10;  static final $className$ instance = $className$._internal();&#10;&#10;  $className$._internal();&#10;&#10;  $END$&#10;}" description="单例，饿汉模式" toReformat="false" toShortenFQNames="true">
+    <variable name="className" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="singlelazy" value="class $className$ {&#10;&#10;  $className$._internal();&#10;&#10;  static $className$? _instance;&#10;&#10;  // 静态 getter 提供访问点，懒加载单例&#10;  static $className$ get instance {&#10;    _instance ??= $className$._internal();&#10;    return _instance!;&#10;  }&#10;  &#10;  $END$&#10;}" description="单例，懒汉模式" toReformat="false" toShortenFQNames="true">
+    <variable name="className" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+</templateSet>
