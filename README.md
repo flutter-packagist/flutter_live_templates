@@ -11,6 +11,9 @@
 > 添加/删除模版路径：Settings-> Editor -> Live Templates
 
 
+>#### 8591Project 组是依赖于项目的模板代码
+
+
 ### 8591Dart.xml
 - **`cc`**: "const constructor"
 - **`singlehungry`**: "单例，饿汉模式"
