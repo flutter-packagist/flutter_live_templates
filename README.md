@@ -22,7 +22,6 @@
 ### 8591Flutter.xml
 - **`col`**: "创建 Column"
 - **`con`**: "创建 Container"
-- **`cstful`**: "创建 StatefulWidget , State 继承自 BasePageState&lt;&gt;"
 - **`delaym`**: "创建 Future.delay"
 - **`delays`**: "创建 Future.delay"
 - **`exp`**: "创建 Expanded"
@@ -33,7 +32,6 @@
 - **`padonly`**: "创建 Padding (EdgeInsets.only())"
 - **`padsh`**: "创建 Padding (EdgeInsets.symmetric(horizontal: ))"
 - **`padsv`**: "创建 Padding (EdgeInsets.symmetric(vertical: ))"
-- **`pc`**: "创建 page Controller"
 - **`posi`**: "创建 Positioned"
 - **`row`**: "创建 Row"
 - **`size`**: "创建 SizeBox"
@@ -41,3 +39,11 @@
 - **`sizew`**: "创建 SizeBox"
 - **`stack`**: "创建 Stack"
 - **`text`**: "创建 Text"
+
+### 8591Project.xml
+- **`cstful`**: "创建 StatefulWidget , State 继承自 BasePageState&lt;&gt;"
+- **`getawait`**: "创建请求 await HttpRequest().get"
+- **`getcallback`**: "创建回调方式get请求 HttpRequest().get"
+- **`pc`**: "创建 page Controller"
+- **`postawait`**: "创建请求 await HttpRequest().post"
+- **`postcallback`**: "创建回调方式post请求 HttpRequest().post"

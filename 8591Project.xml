@@ -1,0 +1,45 @@
+<templateSet group="8591Project">
+  <template name="postcallback" value="HttpRequest().post(&#10;  $url$,&#10;  params: {&#10;    $params$&#10;  },&#10;  callBack: (data) {&#10;    $callBack$&#10;  },&#10;  commonCallBack: (){},&#10;);" description="创建回调方式post请求 HttpRequest().post" toReformat="false" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="callBack" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="postawait" value="await HttpRequest().post(&#10;  $url$,&#10;  params: {&#10;    $params$&#10;  },&#10;);" description="创建请求 await HttpRequest().post" toReformat="false" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="getcallback" value="HttpRequest().get(&#10;  $url$,&#10;  params: {&#10;    $params$&#10;  },&#10;  callBack: (data) {&#10;    $callBack$&#10;  },&#10;  commonCallBack: (){},&#10;);" description="创建回调方式get请求 HttpRequest().get" toReformat="false" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="callBack" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="getawait" value="await HttpRequest().get(&#10;  $url$,&#10;  params: {&#10;    $params$&#10;  },&#10;);" description="创建请求 await HttpRequest().get" toReformat="false" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="cstful" value="import 'package:flutter/material.dart';&#10;import 'package:tw8591app/modular/interact/src/mvc/base_state_page.dart';&#10;&#10;class $NAME$ extends StatefulWidget {&#10;  const $NAME$({super.key});&#10;&#10;  @override&#10;  State&lt;StatefulWidget&gt; createState() =&gt; $NAME$State();&#10;}&#10;&#10;class $NAME$State extends BasePageState&lt;$NAME$,$CONTROLLER$Controller&gt; {&#10;&#10;  @override&#10;  $CONTROLLER$Controller controller = $CONTROLLER$Controller();&#10;  &#10;  @override&#10;  Widget get content { &#10;    $END$&#10;  }&#10;}" description="创建 StatefulWidget , State 继承自 BasePageState&lt;&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTROLLER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="pc" value="import 'package:tw8591app/modular/interact/src/mvc/base_controller.dart';&#10;&#10;class $NAME$Controller extends BaseController&lt;$NAME$Model&gt; {&#10;&#10;  @override&#10;  void initRouteArguments() {&#10;     super.initRouteArguments();&#10;     $END$&#10;  }&#10;  &#10;  @override&#10;  void widgetDidLoad() {&#10;    super.widgetDidLoad();&#10;  }&#10;}" description="创建 page Controller" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+</templateSet>
