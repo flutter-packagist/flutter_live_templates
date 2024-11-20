@@ -11,7 +11,7 @@
 > 添加/删除模版路径：Settings-> Editor -> Live Templates
 
 
->#### 8591Project 组是依赖于项目的模板代码
+#### 8591Project 组是依赖于项目的模板代码
 
 
 ### 8591Dart.xml
